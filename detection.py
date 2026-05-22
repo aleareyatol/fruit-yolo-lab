@@ -28,7 +28,7 @@ if uploaded_file:
     st.image(image, caption="Uploaded Image", use_container_width=True)
 
     if st.button("🚀 Run Detection"):
-        if not os.path.exists(model_path):
+       if False:
             st.error(f"❌ Model not found at: `{model_path}`")
             st.info("Please train your model first or check the path.")
         else:
