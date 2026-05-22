@@ -27,15 +27,15 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Image", use_container_width=True)
 
-    if st.button("🚀 Run Detection"):
-       if False:
-            st.error(f"❌ Model not found at: `{model_path}`")
-            st.info("Please train your model first or check the path.")
-        else:
-            with st.spinner("Running YOLO detection..."):
-                try:
-                    from ultralytics import YOLO
-                    import numpy as np
+if st.button("🚀 Run Detection"):
+    if False:
+        st.error(f"❌ Model not found at: `{model_path}`")
+        st.info("Please train your model first or check the path.")
+    else:
+        with st.spinner("Running YOLO detection..."):
+            try:
+                from ultralytics import YOLO
+                import numpy as np
 
                     model = YOLO(model_path)
 
