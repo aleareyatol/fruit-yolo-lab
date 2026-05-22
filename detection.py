@@ -11,7 +11,7 @@ st.markdown("---")
 st.markdown("### Step 1 — Select Model")
 model_path = st.text_input(
     "Path to trained model weights (.pt file)",
-    value=st.session_state.get('model_path', 'runs/detect/fruit_detection_run/weights/best.pt'),
+    value=st.session_state.get('model_path', 'best.pt'),
     help="Use best.pt from your training run, or yolov8n.pt for a demo with COCO classes"
 )
 st.session_state['model_path'] = model_path
