@@ -27,12 +27,12 @@ st.sidebar.caption("Fruit Detection using YOLOv8")
 
 # Route to pages
 if page == "🏠 Overview":
-    exec(open("pages/overview.py", encoding="utf-8").read())
+    exec(open("overview.py", encoding="utf-8").read())
 elif page == "📦 Dataset":
-    exec(open("pages/dataset.py", encoding="utf-8").read())
+    exec(open("dataset.py", encoding="utf-8").read())
 elif page == "🏋️ Training":
-    exec(open("pages/training.py", encoding="utf-8").read())
+    exec(open("training.py", encoding="utf-8").read())
 elif page == "🔍 Detection":
-    exec(open("pages/detection.py", encoding="utf-8").read())
+    exec(open("detection.py", encoding="utf-8").read())
 elif page == "📊 Analysis":
-    exec(open("pages/analysis.py", encoding="utf-8").read())
+    exec(open("analysis.py", encoding="utf-8").read())
